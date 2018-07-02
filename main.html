@@ -66,34 +66,124 @@
                   <img src="public/images/pokegroup-img2.png" alt="Pokegroup">
                   <img src="public/images/pokeproject-poke-img.png" alt="Pokemon Project">
                 </div>
-                <div class="prev" onclick="changeSlide('previous')">
+                <div class="prev" onclick="changeSlide('previous'); changeLink('previous')">
                   <i style="font-size:2.5em;" class="fas fa-arrow-alt-circle-left"></i>
                   <br>
                   <br> PREVIOUS
                 </div>
-                <div class="next" onclick="changeSlide('next')">
+                <div class="next" onclick="changeSlide('next'); changeLink('next')">
                   <i style="font-size:2.5em;" class="fas fa-arrow-alt-circle-right"></i>
                   <br>
                   <br> NEXT
                 </div>
+                <div class="">
+                  <div class="desc activo">
+                    <h2>title1</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
 
-                <div class="desc">
-                  <h2>title</h2>
-                  <p>blah blah blah blah blah blah blah blah</p>
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
 
-                  <a href="">
-                    <div class="project-btns">
-                      GitHub
-                    </div>
-                  </a>
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
 
-                  <a href="">
-                    <div class="project-btns">
-                      Website
-                    </div>
-                  </a>
+
+                  <div class="desc">
+                    <h2>title2</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="desc">
+                    <h2>title3</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="desc">
+                    <h2>title4</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="desc">
+                    <h2>title5</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="desc">
+                    <h2>title6</h2>
+                    <p>blah blah blah blah blah blah blah blah</p>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        GitHub
+                      </div>
+                    </a>
+                  
+                    <a href="">
+                      <div class="project-btns">
+                        Website
+                      </div>
+                    </a>
+                  </div>
                 </div>
-    
               </div>
               <div class="bottom-content">
                 <div class="skills">
@@ -177,6 +267,25 @@
               $('.slider img').last().addClass('active');
           }
           currentImg.removeClass('active');
+        }
+
+        function changeLink(direction) {
+          let currentLink = $('.activo');
+          let nextLink = currentLink.next();
+          let previousLink = currentLink.prev();
+
+          if (direction == 'next') {
+            if (nextLink.length)
+              nextLink.addClass('activo');
+            else
+              $('.desc').first().addClass('activo');
+          } else {
+            if (previousLink.length)
+              previousLink.addClass('activo');
+            else
+              $('.desc').last().addClass('activo');
+          }
+          currentLink.removeClass('activo');
         }
       </script>
   </body>

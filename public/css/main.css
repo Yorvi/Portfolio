@@ -173,6 +173,12 @@ div#fend, div#bend, div#soft {
   margin-left: 30px;
   margin-right: 30px;
 }
+.desc {
+  display: none;
+}
+.activo {
+  display: inline;
+}
 div.desc > p {
   margin: 0;
 }
