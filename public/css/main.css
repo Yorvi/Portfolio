@@ -97,7 +97,7 @@ a:hover {
 }
 div.projects {
   width: 98.6%;
-  height: 49%;
+  height: 62%;
   background-color: #2A2A37;
   border: 1px solid #313140;
   border-radius: 2px;
@@ -105,22 +105,18 @@ div.projects {
 }
 div.bottom-content {
   width: 100%;
-  height: 49%;
+  height: 35%;
+  text-align: center;
 }
 div.skills {
   float: left;
   height: 96%;
-  width: 43%;
+  width: 98.5%;
   background-color: #2A2A37;
   border: 1px solid #313140;
   border-radius: 2px;
   margin: 7px 5px;
-}
-.skills-name {
-  float:left;
-  height: 100%;
-  width: 50%;
-  text-align: left;
+  display: inline-block;
 }
 li {
   list-style: none;
@@ -134,56 +130,11 @@ li {
   color: #5894C8;
   font-family: 'Josefin Sans', sans-serif;
 }
-.skills-status {
-  float: right;
-  height: 100%;
-  width: 50%;
-  text-align: left;
-}
-.ul1 {
-  margin-top: 30px;
-  padding: 0 10px 0 0;
-}
-.ul2 {
-  margin-top: 30px;
-  padding: 0 10px 0 0;
-}
-.progressbar {
-  background-color: black;
-  border-radius: 13px;
-  padding: 3px;
-  margin-top: 9px;
-}
-.ul1 .progressbar > div {
-    background-color: #FB5588;
-    height: 7px;
-    border-radius: 10px;
+.soft {
+  color: #9C84D0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.ul2 .progressbar > div {
-    background-color: #5894C8;
-    height: 7px;
-    border-radius: 10px;
-}
-.ok > div {
-  width: 60%;
-}
-.great > div {
-  width: 80%;
-}
-.perfect > div {
-  width: 100%;
-}
-
-div.contact-me {
-  float: right;
-  height: 96%;
-  width: 54%;
-  background-color: #2A2A37;
-  border: 1px solid #313140;
-  border-radius: 2px;
-  margin: 7px 5px;
-}
 div.slider {
   display: inline;
 }
@@ -196,7 +147,7 @@ div.slider {
   width: 60%;
   height: 300px;
   display: inline-block;
-  margin: 30px 0 0 0;
+  margin: 15px 0 0 0;
 }
 div.prev {
   display: inline-block;
@@ -216,54 +167,32 @@ div.next:hover {
   color: #5894C8;
   cursor: pointer;
 }
-.form form {
-  float: left;
-  margin: 8px 0 0 0;
+div#fend, div#bend, div#soft {
+  display: inline-block;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-
-.form input {
-  float: left;
-  background-color: #545468;
-  border: 1px solid #FB5588;
+div.desc > p {
+  margin: 0;
+}
+div.desc > h2 {
+  margin: 0 0 10px 0;
+}
+div.desc > a:hover {
   color: white;
-  font-size: 18px;
-  margin: 4px 0;
-  border-radius: 7px;
-  padding-left: 10px;
-  font-family: 'Josefin Sans', sans-serif;
 }
-
-.form textarea {
-  background-color: #545468;
-  border: 1px solid #FB5588;
+.project-btns {
+  width: 100px;
+  background-color: #9C84D0;
+  display: inline-block;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: 1px solid #5A4E86;
+  margin: 15px 10px 0;
+}
+.project-btns:hover {
   color: white;
-  font-size: 18px;
-  margin: 4px 0 0 0;
-  float: left;
-  border-radius: 7px;
-  padding-left: 10px;
-  font-family: 'Abel', sans-serif;
-}
-.form-labels {
-  float: left;
-  color: #5894C8;
-}
-
-.form-labels p {
-  width: 100px;
-  text-align: justify;
-  margin: 10px 0 0 10px;
-  font-size: 18px;
-}
-
-form .sub-btn {
-  float: right;
-  margin: 8px 0 0 0;
-  width: 100px;
-  height: 45px;
-  font-family: 'Josefin Sans', sans-serif;
-}
-form .sub-btn:hover {
-  background-color: #5894C8;
-  cursor: pointer;
+  background-color: #5A4E86;
+  border: 1px solid #9C84D0;
 }
