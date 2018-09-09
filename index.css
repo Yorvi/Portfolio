@@ -11,22 +11,27 @@ body {
 
 #navigation {
   display: grid;
-  grid-template-columns: 2fr 10fr 1.5fr 1.5fr 1.5fr 2.5fr; }
-  #navigation div {
-    padding: 0; }
+  grid-template-columns: 5fr 6fr 1.5fr 1.5fr 1.5fr 2.5fr; }
+  #navigation div.logo {
+    width: 200px; }
+  #navigation img.logo-img {
+    width: 50px;
+    height: 55px;
+    float: left;
+    margin: 5px 15px 0 0; }
   #navigation div.logo > p {
-    margin: 0;
+    margin: 5px 0 0;
     font-weight: 900;
     font-size: 110%;
     letter-spacing: 2px;
-    line-height: 5px; }
+    line-height: 15px; }
     #navigation div.logo > p:nth-child(1) {
-      line-height: 30px; }
+      line-height: 20px; }
     #navigation div.logo > p:nth-last-child(1) {
       font-weight: 400;
       font-size: 80%;
       letter-spacing: 1px;
-      line-height: 30px; }
+      line-height: 20px; }
   #navigation div.nav-link {
     text-align: center;
     padding: 22.5px 0; }
@@ -143,7 +148,7 @@ body {
     padding: 15px 0 75px; }
   #projects .grid-box img {
     width: 100%;
-    height: 250px;
+    height: 325px;
     border: 4px solid #212121;
     border-radius: 10px; }
   #projects .img-title {
