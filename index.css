@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #FCFCFF;
+  color: #212121; }
+
+#container {
+  width: 90%;
+  max-width: 1550px;
+  margin: auto; }
+
+#navigation {
+  display: grid;
+  grid-template-columns: 2fr 10fr 1.5fr 1.5fr 1.5fr 2.5fr; }
+  #navigation div {
+    padding: 0; }
+  #navigation div.logo > p {
+    margin: 0;
+    font-weight: 900;
+    font-size: 110%;
+    letter-spacing: 2px;
+    line-height: 5px; }
+    #navigation div.logo > p:nth-child(1) {
+      line-height: 30px; }
+    #navigation div.logo > p:nth-last-child(1) {
+      font-weight: 400;
+      font-size: 80%;
+      letter-spacing: 1px;
+      line-height: 30px; }
+  #navigation div.nav-link {
+    text-align: center;
+    padding: 22.5px 0; }
+    #navigation div.nav-link a {
+      text-decoration: none;
+      color: black;
+      font-weight: 900;
+      letter-spacing: 2px; }
+    #navigation div.nav-link a:hover {
+      padding: 2px 0;
+      border-bottom: 2px solid #caccd1;
+      border-top: 2px solid #caccd1; }
+    #navigation div.nav-link a.active {
+      padding: 5px 0;
+      border-bottom: 4px solid #FF6600;
+      border-top: 4px solid #FF6600; }
+  #navigation div.nav-btn {
+    text-align: center;
+    padding: 22.5px 0; }
+    #navigation div.nav-btn a {
+      text-decoration: none;
+      color: #212121;
+      font-weight: 900;
+      border: 2px solid #212121;
+      border-radius: 100px;
+      padding: 5px 35px;
+      transition: background .6s; }
+    #navigation div.nav-btn a:hover {
+      background: #212121;
+      color: #FCFCFF;
+      border: 2px solid #212121; }
+
+#head-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #c0c0c0; }
+  #head-content div {
+    padding: 0; }
+  #head-content div.head-left {
+    padding: 100px 0 0;
+    margin-bottom: 50px; }
+    #head-content div.head-left p {
+      margin: 0;
+      letter-spacing: 3px; }
+    #head-content div.head-left p:nth-child(1) {
+      color: #a0a0a0;
+      font-size: 250%;
+      line-height: 35px; }
+    #head-content div.head-left p:nth-child(2) {
+      font-size: 350%;
+      font-weight: 900;
+      line-height: 75px; }
+    #head-content div.head-left p:nth-last-child(1) {
+      font-size: 175%;
+      line-height: 375px; }
+    #head-content div.head-left div.links a.linkedin {
+      text-decoration: none;
+      color: #0077B5;
+      transition: color .6s; }
+    #head-content div.head-left div.links a.github {
+      text-decoration: none;
+      color: #212121;
+      transition: color .6s; }
+    #head-content div.head-left div.links a:hover {
+      color: #FF6600; }
+    #head-content div.head-left div.btns {
+      margin: 50px 0; }
+      #head-content div.head-left div.btns a {
+        text-decoration: none;
+        color: #212121;
+        font-weight: 900;
+        border-radius: 100px;
+        padding: 5px 35px;
+        transition: background .6s; }
+      #head-content div.head-left div.btns a:nth-child(1) {
+        background: #212121;
+        color: #FCFCFF;
+        transition: border 1s;
+        border: 4px solid #212121;
+        margin-right: 10px; }
+        #head-content div.head-left div.btns a:nth-child(1):hover {
+          border: 4px solid #FF6600; }
+      #head-content div.head-left div.btns a:nth-child(2) {
+        border: 4px solid #caccd1; }
+        #head-content div.head-left div.btns a:nth-child(2):hover {
+          color: #212121;
+          background: #caccd1; }
+  #head-content div.head-right {
+    margin-top: 50px;
+    background-image: url(images/watermark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: lighten; }
+    #head-content div.head-right div.image {
+      transform: rotate(180deg);
+      padding-bottom: 50px; }
+
+#projects {
+  display: grid; }
+  #projects div#heading {
+    font-size: 250%;
+    font-weight: 900;
+    line-height: 0;
+    text-align: center;
+    margin-bottom: 50px; }
+  #projects .picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    justify-items: center;
+    grid-gap: 30px;
+    grid-row-gap: 20px;
+    padding: 15px 0 75px; }
+  #projects .grid-box img {
+    width: 100%;
+    height: 250px;
+    border: 4px solid #212121;
+    border-radius: 10px; }
+  #projects .img-title {
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+    padding: 20px 0; }
+  #projects .img-info {
+    border: 4px solid #212121;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #caccd1;
+    margin: 5px 0 25px; }
+    #projects .img-info .proj-desc {
+      padding: 0 10px 15px;
+      font-size: 110%; }
+  #projects .links {
+    margin: 15px 0 25px;
+    text-align: center; }
+  #projects .web-link {
+    background-color: #caccd1;
+    border: 4px solid #FCFCFF;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #212121;
+    transition: background-color .6s;
+    transition: color .6s;
+    transition: border-color .6s; }
+    #projects .web-link:hover {
+      background-color: #212121;
+      color: #FCFCFF;
+      border-color: #FF6600; }
+  #projects .code-link {
+    background-color: #caccd1;
+    border: 4px solid #FCFCFF;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #212121;
+    transition: background-color .6s;
+    transition: color .6s;
+    transition: border-color .6s; }
+    #projects .code-link:hover {
+      background-color: #212121;
+      color: #FCFCFF;
+      border-color: #FF6600; }
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #c0c0c0; }
+  #footer div {
+    padding: 25px 0 100px; }
+    #footer div:nth-child(1) h1 {
+      line-height: 10px; }
+    #footer div:nth-last-child(1) ul {
+      list-style: none;
+      font-size: 120%; }
+    #footer div:nth-last-child(1) li {
+      padding-left: 25px;
+      line-height: 40px; }
+
+/*# sourceMappingURL=index.css.map */

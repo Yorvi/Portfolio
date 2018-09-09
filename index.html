@@ -1,290 +1,265 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yorvin's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="public/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous">
-    <link rel="icon" href="public/images/headshot1.png">
-  </head>
-
-  <body>
-
-    <div id="wrapper">
-      <div id="main">
-        <div id="container">
-          <div class="content">
-            <div class="left-side">
-              <div class="self-title">
-                Yorvin Rosario
-                <br> Full Stack Developer
-              </div>
-    
-              <div class="about-me">
-                <p>
-                  &nbsp;&nbsp;&nbsp;Hi, I'm Yorvin. I am a software engineer and full stack web developer with an interest in design. A life
-                  lived for art is never a life wasted. I am a life-long learner and hope to learn as many new skills that I
-                  can throughout my career. If my skills match your interest, please feel free to contact me about your next
-                  project.
-                </p>
-              </div>
-              <div class="links">
-                <div class="mail">
-                  <i style="font-size:2.5em;" class="fas fa-at">&nbsp;&nbsp;</i>
-                  <div class="email">YorvinMR@gmail.com</div>
-    
-                </div>
-    
-                <div class="github">
-                  <a href="https://github.com/Yorvi" target="_blank">
-                    <i style="font-size:3em;" class="fab fa-github-square"></i>
-                  </a>
-                </div>
-    
-                <div class="linkedin">
-                  <a href="https://www.linkedin.com/in/yorvin-rosario/" target="_blank">
-                    <i style="font-size:3em;" class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="right-side">
-              <div class="projects">
-                <div class="slider">
-                  <img src="public/images/exp-atk-preview.png" alt="EXP ATK" class="active">
-                  <img src="public/images/mariia-bakery-img.png" alt="Mariia's Bake Shop">
-                  <img src="public/images/da-wave-blog-img.png" alt="Da Wave Rap Blog">
-                  <img src="public/images/pokegroup-img.png" alt="Pokegroup">
-                  <img src="public/images/pokegroup-img2.png" alt="Pokegroup">
-                  <img src="public/images/pokeproject-poke-img.png" alt="Pokemon Project">
-                </div>
-                <div class="prev" onclick="changeSlide('previous'); changeLink('previous')">
-                  <i style="font-size:2.5em;" class="fas fa-arrow-alt-circle-left"></i>
-                  <br>
-                  <br> PREVIOUS
-                </div>
-                <div class="next" onclick="changeSlide('next'); changeLink('next')">
-                  <i style="font-size:2.5em;" class="fas fa-arrow-alt-circle-right"></i>
-                  <br>
-                  <br> NEXT
-                </div>
-                <div class="">
-                  <div class="desc activo">
-                    <h2>EXP ATK</h2>
-                    <p>A full stack web application created in a team of four to solve the problem of a lack of innovative user-friendly forums.</p>
-
-                    <a href="https://github.com/mr-martinsosa/exp-atk" target="_blank">
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-
-                    <a href="http://exp-atk.herokuapp.com/" target="_blank">
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Yorvin's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans+Condensed:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <script src="index.js"></script>
+</head>
+<body>
 
 
-                  <div class="desc">
-                    <h2>Mariia's Bake Shop</h2>
-                    <p>A fullstack website that displays info on items offered for sale as well as an emailed catalog.</p>
-                  
-                    <a href="https://github.com/Yorvi/friendly-bakery" target="_blank">
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-                  
-                    <a href="https://friendly-bakery-nycda.herokuapp.com/" target="_blank">
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
+  <div id="container">
 
+    <div id="header">
 
-                  <div class="desc">
-                    <h2>Da Wave Rap </h2>
-                    <p>A fullstack simple blog website that enables someone to sign up for an account and create relevant posts on a topic.</p>
-                  
-                    <a href="https://github.com/Yorvi/R-umblr" target="_blank" >
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-                  
-                    <a href="https://r-umblr-nycda.herokuapp.com/" target="_blank" >
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
+      <div id="navigation">
+        <div class="logo">
+          <p>Yorvin</p>
+          <p>Rosario</p>
+          <p>Full Stack Developer</p>
+        </div>
+        <div></div>
+        <div class="nav-link">
+          <a class="active" href="">HOME</a>
+        </div>
+        <div class="nav-link">
+          <a href="">ABOUT ME</a>
+        </div>
+        <div class="nav-link">
+          <a href="mailto:yorvinmr@gmail.com?Subject=Portfolio%20Contact" target="_top">CONTACT</a>
+        </div>
+        <div class="nav-btn">
+          <a href="">HIRE ME</a>
+        </div>
+      </div>
 
+      <div id="head-content">
+        <div class="head-left">
+          <p>Hello, I'm</p>
+          <p>Yorvin Rosario</p>
+          <p>Full Stack Developer</p>
 
-                  <div class="desc">
-                    <h2>PokeGroup pt.1</h2>
-                    <p>To collaborate on a pokemon website showcasing all pokemon from the prior trainer project by utilizing libraries written by group members.</p>
-                  
-                    <a href="https://github.com/scottsutrisno/pokegroup" target="_blank" >
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-                  
-                    <a href="https://scottsutrisno.github.io/pokegroup/" target="_blank" >
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
-
-
-                  <div class="desc">
-                    <h2>PokeGroup pt.2</h2>
-                    <p>To collaborate on a pokemon website showcasing all pokemon from the prior trainer project by utilizing libraries written by group members.</p>
-                  
-                    <a href="https://github.com/scottsutrisno/pokegroup" target="_blank" >
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-                  
-                    <a href="https://scottsutrisno.github.io/pokegroup/" target="_blank" >
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
-
-
-                  <div class="desc">
-                    <h2>Personal Pokedex</h2>
-                    <p>A website that displays info focused around 3 pokemon using AJAX to retrieve data. This project is focused on client side technologies.</p>
-                  
-                    <a href="https://github.com/Yorvi/personal-pokedex-assignment" target="_blank" >
-                      <div class="project-btns">
-                        GitHub
-                      </div>
-                    </a>
-                  
-                    <a href="https://yorvi.github.io/personal-pokedex-assignment/" target="_blank" >
-                      <div class="project-btns">
-                        Website
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="bottom-content">
-                <div class="skills">
-                    <div id="fend">
-                      <ul>
-                        <span class="fend">Front End</span>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript/JQuery</li>
-                        <li>Bootstrap/Materialize</li>
-                        <li>SASS/SCSS</li>
-                        <li>Git</li>
-                        <li>Responsive Designs</li>
-                        <li>Testing/Debugging</li>
-                        <li>Command Line/Terminal</li>
-                        <li>Wireframing</li>
-                      </ul>
-                    </div>
-                    
-                    <div id="bend">
-                      <ul>
-                        <span class="bend">Back End</span>
-                        <li>JavaScript/NodeJS</li>
-                        <li>Ruby/Sinatra/Ruby on Rails</li>
-                        <li>API's</li>
-                        <li>AJAX</li>
-                        <li>Database Theory</li>
-                        <li>SQLite3/Postgresql</li>
-                        <li>User Authentication</li>
-                        <li>MVC</li>
-                        <li>&nbsp;</li>
-                      </ul>
-                    </div>
-                    <div id="soft">
-                      <ul>
-                        <span class="soft">Soft Skills</span>
-                        <li>Project Management</li>
-                        <li>Project Scoping</li>
-                        <li>Professional Development </li>
-                        <li>Collaborative Development</li>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                        <li>Bilingual</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                      </ul>
-                    </div>
-                  
-
-                </div>
-                
-              </div>
-            </div>
+          <br />
+          
+          <div class="links">
+            <span style="font-size: 3em;">
+              <a class="linkedin" href="https://www.linkedin.com/in/yorvin-rosario/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+            </span>
+            <span style="font-size: 3em;">
+              <a class="github" href="https://github.com/Yorvi" target="_blank"><i class="fab fa-github-square"></i></a> 
+            </span>
+          </div>
+          <div class="btns">
+            <a href="">HIRE ME</a>
+            <a href="files/Yorvin's Resume.pdf" target="_blank">SEE MY RESUME</a>
+          </div>
+        </div>
+        <div class="head-right">
+          <div class="image">
+            <img src="images/avatar-coding.png" alt="">
           </div>
         </div>
       </div>
+
     </div>
 
-      <script>
-        <svg class="svg-inline--fa fa-camera-retro fa-w-16" aria-hidden="true" data-fa-i2svg="" data-prefix="fas" data-icon="camera-retro" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor" d="M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H48zm0 32h106c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H38c-3.3 0-6-2.7-6-6V80c0-8.8 7.2-16 16-16zm426 96H38c-3.3 0-6-2.7-6-6v-36c0-3.3 2.7-6 6-6h138l30.2-45.3c1.1-1.7 3-2.7 5-2.7H464c8.8 0 16 7.2 16 16v74c0 3.3-2.7 6-6 6zM256 424c-66.2 0-120-53.8-120-120s53.8-120 120-120 120 53.8 120 120-53.8 120-120 120zm0-208c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm-48 104c-8.8 0-16-7.2-16-16 0-35.3 28.7-64 64-64 8.8 0 16 7.2 16 16s-7.2 16-16 16c-17.6 0-32 14.4-32 32 0 8.8-7.2 16-16 16z"></path>
-        </svg>
-      </script>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-      <script type="text/javascript">
+    <div id="projects">
+      <div id="heading">
+        <p>PROJECTS</p>
+      </div>
 
-        function changeSlide(direction) {
-          let currentImg = $('.active');
-          let nextImg = currentImg.next();
-          let previousImg = currentImg.prev();
+      <div class="picture-grid">
 
-          if (direction == 'next') {
-            if (nextImg.length)
-              nextImg.addClass('active');
-            else
-              $('.slider img').first().addClass('active');
-          } else {
-            if (previousImg.length)
-              previousImg.addClass('active');
-            else
-              $('.slider img').last().addClass('active');
-          }
-          currentImg.removeClass('active');
-        }
+        <div class="grid-box">
+          <div class="img-title">MUNDER DIFFLIN</div>
 
-        function changeLink(direction) {
-          let currentLink = $('.activo');
-          let nextLink = currentLink.next();
-          let previousLink = currentLink.prev();
+          <img src="images/project-imgs/munder-difflin-preview.png" />
 
-          if (direction == 'next') {
-            if (nextLink.length)
-              nextLink.addClass('activo');
-            else
-              $('.desc').first().addClass('activo');
-          } else {
-            if (previousLink.length)
-              previousLink.addClass('activo');
-            else
-              $('.desc').last().addClass('activo');
-          }
-          currentLink.removeClass('activo');
-        }
-      </script>
-  </body>
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> A Front-End simplistic website for a comical paper company to showcase products available.
+              </p>
+              <p>
+                <b>Goal:</b> To create a one page website for a fictional paper company that is exciting for the end user. Upon successful completion of this project, the app will demonstrate semantic HTML, proper element targeting in CSS, behavioral javascript, animations and understanding the website user.
+              </p>
+              <div class="desc-tags">
 
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="https://yorvi.github.io/munder-difflin/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/Yorvi/munder-difflin" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-box">
+          <div class="img-title">PERSONAL POKÉDEX</div>
+
+          <img src="images/project-imgs/pokeproject-poke-img.png" />
+
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> A Front-End website that retrieves data from a Pokémon API.
+              </p>
+              <p>
+                <b>Goal:</b> To create a pokemon trainer showcase website that displays information focused around 3 pokemon chosen using AJAX to retrieve said data. This project is focused on client side technologies. Upon successful completion of this project, the app will demonstrate Object Oriented Javascript, APIs, AJAX, grid systems, SASS, UI/UX.
+              </p>
+              <div class="desc-tags">
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="https://yorvi.github.io/personal-pokedex-assignment/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/Yorvi/personal-pokedex-assignment" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-box">
+          <div class="img-title">POKÉGROUP GYM</div>
+
+          <img src="images/project-imgs/pokegroup-img.png" />
+
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> A Front-End collaborative Pokémon Gym app that showcases pokémon the trainers pokémon data.
+              </p>
+              <p>
+                <b>Goal:</b> To collaborate on a pokémon gym website showcasing all chosen pokemon from the prior trainer project by utilizing libraries written by individual group members. This project is focused on client side technologies. Upon successful completion of this project, the app will demonstrate software engineering collaboration.
+              </p>
+              <div class="desc-tags">
+
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="https://scottsutrisno.github.io/pokegroup/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/scottsutrisno/pokegroup" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-box">
+          <div class="img-title">FRIENDLY BAKERY</div>
+
+          <img src="images/project-imgs/mariia-bakery-img.png" />
+
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> To create a Full-Stack bakery website that displays information on cookies, cakes and muffins offered for sale as well as enables someone to receive a catalog of items sold via email.
+              </p>
+              <p>
+                <b>Goal:</b> To create a website using the Back-End to create extra features. Upon successful completion of this project, the app will demonstrate how to use API Wrappers in Ruby as well as knowledge to create a website using the Sinatra microframework.
+              </p>
+              <div class="desc-tags">
+
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="https://friendly-bakery-nycda.herokuapp.com/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/Yorvi/friendly-bakery" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-box">
+          <div class="img-title">RUBY TUMBLR</div>
+
+          <img src="images/project-imgs/da-wave-blog-img.png" />
+
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> To create a Full-Stack simple blog website that enables someone to sign up for an account and create relevant posts on a specific topic.
+              </p>
+              <p>
+                <b>Goal:</b> Create a Full-Stack website similar to a social media website. Upon successful completion of this project, the app will demonstrate an understanding of Sinatra, ActiveRecord, Cookies and deploying to Heroku.
+              </p>
+              <div class="desc-tags">
+
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="https://r-umblr-nycda.herokuapp.com/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/Yorvi/R-umblr" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-box">
+          <div class="img-title">START UP CRUNCH</div>
+
+          <img src="images/project-imgs/exp-atk-preview.png" />
+
+          <div class="img-info">
+            
+            <div class="proj-desc">
+              <p>
+                <b>Description:</b> A full stack web application created in a team of four to solve the problem of a lack of innovative user-friendly forums.
+              </p>
+              <p>
+                <b>Goal:</b> To collaborate, organize and create an MVP web product using Ruby on Rails for a potential investor within a group
+                setting. Within the project each group member will demonstrate an understanding of HTML, CSS, JS, Ruby on Rails, Team Dynamics
+                and Workplace Simulation.
+              </p>
+
+              <div class="desc-tags">
+
+              </div>
+            </div>
+
+            <div class="links">
+              <a href="http://exp-atk.herokuapp.com/" target="_blank" class="web-link">WEBPAGE</a>
+              <a href="https://github.com/mr-martinsosa/exp-atk" target="_blank" class="code-link">CODE</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div>
+        <h1>YORVIN ROSARIO</h1>
+        <small>Full Stack Developer</small>
+      </div>
+      <div></div>
+      <div>
+        <ul> <strong>CONTACT INFORMATION</strong>
+          <li><strong>LinkedIn:</strong> www.linkedin.com/in/yorvin-rosario/</li>
+          <li><strong>GitHub:</strong> www.github.com/Yorvi</li>
+          <li><strong>E-Mail:</strong> YorvinMR@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  
+</body>
 </html>
