@@ -216,6 +216,9 @@ body {
   #about p {
     font-size: 150%;
     text-align: justify; }
+  #about .facts-of-me {
+    font-size: 150%;
+    text-align: justify; }
   #about div.btns {
     margin: 50px 0;
     text-align: center; }
