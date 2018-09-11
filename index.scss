@@ -322,7 +322,18 @@ body {
   }
   .facts-of-me {
     font-size: 150%;
-    text-align: justify;
+  }
+  div.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .skillsets {
+      font-size: 150%;
+      list-style: none;
+
+      li {
+        padding-left: 25px;
+      }
+    }
   }
 
   div.btns {

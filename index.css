@@ -217,8 +217,15 @@ body {
     font-size: 150%;
     text-align: justify; }
   #about .facts-of-me {
-    font-size: 150%;
-    text-align: justify; }
+    font-size: 150%; }
+  #about div.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    #about div.skills .skillsets {
+      font-size: 150%;
+      list-style: none; }
+      #about div.skills .skillsets li {
+        padding-left: 25px; }
   #about div.btns {
     margin: 50px 0;
     text-align: center; }
