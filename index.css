@@ -332,7 +332,9 @@ body {
           border: 4px solid #caccd1; }
           #head-content div.head-left div.btns a:nth-child(2):hover {
             color: #212121;
-            background: #caccd1; } }
+            background: #caccd1; }
+    #head-content div.head-right {
+      display: none; } }
 @media only screen and (max-width: 1045px) {
   #about {
     padding: 100px 0;
@@ -399,8 +401,6 @@ body {
         #head-content div.head-left div.btns a:nth-child(2):hover {
           color: #212121;
           background: #caccd1; }
-  #head-content div.head-right {
-    display: none; }
 
   #footer {
     grid-template-columns: 1fr 1fr; }
