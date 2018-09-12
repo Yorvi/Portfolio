@@ -265,6 +265,9 @@ body {
       padding-left: 25px;
       line-height: 40px; }
 
+@media only screen and (max-width: 1212px) {
+  #about {
+    padding: 150px 75px; } }
 @media only screen and (max-width: 1096px) {
   #navigation div.nav-link {
     padding: 20px 0; }
@@ -285,6 +288,9 @@ body {
       border-radius: 100px;
       padding: 5px 15px;
       transition: background .6s; } }
+@media only screen and (max-width: 1045px) {
+  #about {
+    padding: 100px 25px; } }
 @media only screen and (max-width: 982px) {
   #head-content {
     grid-template-columns: 1fr; }
@@ -327,6 +333,10 @@ body {
           #head-content div.head-left div.btns a:nth-child(2):hover {
             color: #212121;
             background: #caccd1; } }
+@media only screen and (max-width: 1045px) {
+  #about {
+    padding: 100px 0;
+    font-size: 80%; } }
 @media only screen and (max-width: 871px) {
   #navigation {
     grid-template-columns: 3fr 5fr 2fr 2fr 2fr 2fr; }
@@ -500,6 +510,43 @@ body {
       justify-items: center;
       padding: 15px 0 75px;
       margin: 0; } }
+@media only screen and (max-width: 652px) {
+  #about {
+    padding: 50px 10px;
+    font-size: 80%; }
+    #about div.title1 {
+      margin: 0;
+      font-size: 475%;
+      font-weight: 900;
+      line-height: 35px; }
+    #about div.title2 {
+      margin: 0;
+      font-size: 550%;
+      font-weight: 900;
+      color: #caccd1; }
+    #about div.btns {
+      margin: 50px 0;
+      text-align: center; }
+      #about div.btns a {
+        text-decoration: none;
+        color: #212121;
+        font-weight: 900;
+        border-radius: 100px;
+        padding: 10px 45px;
+        transition: background .6s; }
+      #about div.btns a:nth-child(1) {
+        background: #212121;
+        color: #FCFCFF;
+        transition: border 1s;
+        border: 4px solid #212121;
+        margin-right: 30px; }
+        #about div.btns a:nth-child(1):hover {
+          border: 4px solid #FF6600; }
+      #about div.btns a:nth-child(2) {
+        border: 4px solid #caccd1; }
+        #about div.btns a:nth-child(2):hover {
+          color: #212121;
+          background: #caccd1; } }
 @media only screen and (max-width: 454px) {
   #navigation {
     grid-template-columns: 1.5fr 1fr 1fr 1fr; }
