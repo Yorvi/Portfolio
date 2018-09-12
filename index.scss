@@ -838,6 +838,52 @@ body {
   }
 }
 
+@media only screen and (max-width: 572px) {
+  #about {
+
+  div.title1 {
+    margin: 0;
+    font-size: 275%;
+    font-weight: 900;
+    line-height: 35px;
+  }
+  div.title2 {
+    margin: 0;
+    font-size: 450%;
+    font-weight: 900;
+    color: #caccd1;
+  }
+  p {
+    font-size: 100%;
+    text-align: justify;
+  }
+  .facts-of-me {
+    font-size: 100%;
+  }
+  div.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .skillsets {
+      font-size: 150%;
+      list-style: none;
+
+      li {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+}
+
+@media only screen and (max-width: 466px) {
+  #about {
+    div.skills {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
 @media only screen and (max-width: 454px) {
   #navigation {
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -881,6 +927,46 @@ body {
 
     div:nth-child(2) {
       display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  #about {
+    div.btns {
+      margin: 25px 0;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #212121;
+        font-weight: 900;
+        border-radius: 100px;
+        padding: 15px 15px;
+        transition: background .6s;
+      }
+
+      a:nth-child(1) {
+        background: #212121;
+        color: #FCFCFF;
+        transition: border 1s;
+        border: 4px solid #212121;
+        margin-right: 10px;
+
+        &:hover {
+          border: 4px solid #FF6600;
+        }
+      }
+
+      a:nth-child(2) {
+        border: 4px solid #caccd1;
+
+        &:hover {
+          color: #212121;
+          background: #caccd1;
+        }
+      }
+      
     }
   }
 }
