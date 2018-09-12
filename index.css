@@ -500,5 +500,110 @@ body {
       justify-items: center;
       padding: 15px 0 75px;
       margin: 0; } }
+@media only screen and (max-width: 454px) {
+  #navigation {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+    #navigation div:nth-child(1) {
+      grid-column: 1/6; }
+    #navigation div.nav-link {
+      padding: 20px 0; }
+      #navigation div.nav-link a {
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        letter-spacing: 1px; }
+    #navigation div.nav-btn {
+      text-align: center;
+      padding: 20px 0; }
+      #navigation div.nav-btn a {
+        font-size: 80%;
+        text-decoration: none;
+        color: #212121;
+        font-weight: 900;
+        border: 2px solid #212121;
+        border-radius: 100px;
+        padding: 5px 5px;
+        transition: background .6s; }
+
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    font-size: 70%; }
+    #footer div:nth-child(2) {
+      display: none; } }
+@media only screen and (max-width: 367px) {
+  #head-content div.head-left {
+    padding: 20px 0 0;
+    margin-bottom: 50px;
+    border-top: 1px solid #a0a0a0; }
+    #head-content div.head-left p {
+      margin: 0;
+      letter-spacing: 3px; }
+    #head-content div.head-left p:nth-child(1) {
+      color: #a0a0a0;
+      font-size: 200%;
+      line-height: 35px; }
+    #head-content div.head-left p:nth-child(2) {
+      font-size: 250%;
+      font-weight: 900;
+      line-height: 75px; }
+    #head-content div.head-left p:nth-last-child(1) {
+      font-size: 175%;
+      line-height: 375px; }
+    #head-content div.head-left div.links a.linkedin {
+      text-decoration: none;
+      color: #0077B5;
+      transition: color .6s; }
+    #head-content div.head-left div.links a.github {
+      text-decoration: none;
+      color: #212121;
+      transition: color .6s; }
+    #head-content div.head-left div.links a:hover {
+      color: #FF6600; }
+    #head-content div.head-left div.btns {
+      margin: 50px 0; }
+      #head-content div.head-left div.btns a {
+        text-decoration: none;
+        color: #212121;
+        font-weight: 900;
+        border-radius: 100px;
+        padding: 5px 35px;
+        transition: background .6s; }
+      #head-content div.head-left div.btns a:nth-child(1) {
+        background: #212121;
+        color: #FCFCFF;
+        transition: border 1s;
+        border: 4px solid #212121;
+        margin-right: 10px; }
+        #head-content div.head-left div.btns a:nth-child(1):hover {
+          border: 4px solid #FF6600; }
+      #head-content div.head-left div.btns a:nth-child(2) {
+        border: 4px solid #caccd1; }
+        #head-content div.head-left div.btns a:nth-child(2):hover {
+          color: #212121;
+          background: #caccd1; } }
+@media only screen and (max-width: 367px) {
+  #head-content div.head-left div.btns {
+    margin: 25px 0; }
+    #head-content div.head-left div.btns a {
+      text-decoration: none;
+      color: #212121;
+      font-weight: 900;
+      border-radius: 100px;
+      padding: 5px 15px;
+      transition: background .6s; }
+    #head-content div.head-left div.btns a:nth-child(1) {
+      background: #212121;
+      color: #FCFCFF;
+      transition: border 1s;
+      border: 4px solid #212121;
+      margin-right: 10px; }
+      #head-content div.head-left div.btns a:nth-child(1):hover {
+        border: 4px solid #FF6600; }
+    #head-content div.head-left div.btns a:nth-child(2) {
+      border: 4px solid #caccd1; }
+      #head-content div.head-left div.btns a:nth-child(2):hover {
+        color: #212121;
+        background: #caccd1; } }
 
 /*# sourceMappingURL=index.css.map */
