@@ -381,6 +381,15 @@ body {
   
   div {
     padding: 25px 0 100px;
+    a {
+      text-decoration: none;
+      color: #FF6600;
+      transition: color .6s;
+
+      &:hover {
+        color: #212121;
+      }
+    }
 
     &:nth-child(1) {
       h1 {
@@ -397,7 +406,6 @@ body {
       li {
         padding-left: 25px;
         line-height: 40px;
-
       }
     }
   }

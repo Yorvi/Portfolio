@@ -256,6 +256,12 @@ body {
   border-top: 1px solid #c0c0c0; }
   #footer div {
     padding: 25px 0 100px; }
+    #footer div a {
+      text-decoration: none;
+      color: #FF6600;
+      transition: color .6s; }
+      #footer div a:hover {
+        color: #212121; }
     #footer div:nth-child(1) h1 {
       line-height: 10px; }
     #footer div:nth-last-child(1) ul {
