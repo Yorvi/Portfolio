@@ -1,29 +1,12 @@
-# portfolio-vue
+3D Bold Navigation
+=========
 
-## Project setup
-```
-npm install
-```
+A bold navigation that slides in when active, replacing the current content in a 3D space.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[Article on CodyHouse](http://codyhouse.co/gem/3d-bold-navigation/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[Demo](http://codyhouse.co/demo/3d-bold-navigation/index.html)
+ 
+[Terms](http://codyhouse.co/terms/)
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Icons from [Nucleo](http://nucleoapp.com/)
